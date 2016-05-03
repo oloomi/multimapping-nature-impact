@@ -1,0 +1,27 @@
+import rnftools
+import smbl
+
+# CONFIGURATION
+
+reference = "/home/mohammad/datasets/bacteria/Mycobacterium_tuberculosis_H37Rv_uid57777/NC_000962.fna"
+reads = "mtb_reads.fq"
+
+# READ SIMULATION
+
+rnftools.mishmash.sample(reads[:-3],reads_in_tuple=2)
+
+rnftools.mishmash.ArtIllumina(
+	fasta=reference,
+	read_length_1=100,
+	read_length_2=100,
+	coverage=20,
+	distance=500,
+	distance_deviation=50.0,
+	rng_seed=12345,
+)
+
+# SNAKEMAKE RULES
+
+include: rnftools.include()
+rule: input: rnftools.input()
+
