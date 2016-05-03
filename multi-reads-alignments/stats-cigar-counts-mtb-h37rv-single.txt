@@ -1,0 +1,4 @@
+#reads that map to only one location:	859831	0.975
+#reads that map more than one location, with same CIGAR:	19897	0.023
+#reads that map more than one location, with different CIGAR's:	2261	0.003
+#all reads:	881989

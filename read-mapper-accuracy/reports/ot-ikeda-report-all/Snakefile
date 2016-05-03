@@ -1,0 +1,13 @@
+import rnftools
+
+rnftools.lavender.Report(
+	bam_dirs=["../../bams/ot-ikeda-report-all"],
+	name="report_PE",
+	keep_intermediate_files=True,
+	default_x_run=(6e-05, 2e-04),
+	allowed_delta=150,
+)
+
+rule all: input: rnftools.input()
+
+include: rnftools.include()

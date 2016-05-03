@@ -1,0 +1,13 @@
+import rnftools
+
+rnftools.lavender.Report(
+	bam_dirs=["../../bams/mtb-h37rv-report-all"],
+	name="report_PE",
+	keep_intermediate_files=True,
+	default_x_run=(1e-07, 1e-05),
+	allowed_delta=150,
+)
+
+rule all: input: rnftools.input()
+
+include: rnftools.include()

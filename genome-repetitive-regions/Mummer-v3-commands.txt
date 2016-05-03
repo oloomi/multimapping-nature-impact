@@ -1,0 +1,3 @@
+repeat-match -n 27 ../datasets/genomes/Mycobacterium_tuberculosis_H37Rv_uid57777/NC_000962.fna > Mycobacterium_tuberculosis_H37Rv_uid57777-repeats-rc-27.txt
+
+repeat-match -n 27 ../datasets/genomes/Orientia_tsutsugamushi_Ikeda_uid58869/NC_010793.fna > Orientia_tsutsugamushi_Ikeda_uid58869-repeats-rc-27.txt

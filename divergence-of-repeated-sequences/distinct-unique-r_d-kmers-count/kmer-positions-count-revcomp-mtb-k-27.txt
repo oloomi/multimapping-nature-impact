@@ -1,0 +1,5 @@
+Distinct: 8686566
+Unique: 8613118
+Hamming 0: 209894
+Hamming 1: 90922
+Hamming 2: 165458
