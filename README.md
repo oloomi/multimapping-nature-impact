@@ -1,2 +1,4 @@
-# sequence-ambiguity
-The codes and the data for the paper "The nature and impact of sequence ambiguity in read mapping".
+# The nature and impact of multi-mappings in short read mapping
+This repository contains the source codes for a number of experiments that investigate the nature and impact of multi-mappings in short read mapping.
+
+In these experiments, we explore the differences in the genomes for their potential of creating ambiguity in read mapping. We design a set of k-mer analysis experiments to investigate the repetitive regions in the genome, the divergence of repeats, and the distribution of edit distances between subsequences of the genome. These experiments provide an insight of how challenging an organism's genome can be for short-read mapping in regard to the multi-mapping problem.	Furthermore, we investigate the impact of multi-mappings on read mapping accuracy. In addition, we explore the alignments of multi-reads to get an idea of how distinct they are and how much a multi-mapping resolution method can manoeuvre.
